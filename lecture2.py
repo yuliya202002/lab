@@ -1,3 +1,14 @@
+def read_int_variable(variable_name):
+    variable = 0
+    while True:
+        variable_str = input("Введите " + variable_name + ": ")
+        if variable_str.isdigit():
+            variable = int(variable_str)
+            break
+        else:
+            print("Ввёдённое значение не является целым числом")
+            continue
+    return variable
 import math
 k1 = int(input("Введите k1"))
 k2 = int(input("Введите k2"))
